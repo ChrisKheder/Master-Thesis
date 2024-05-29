@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=D_p Pin=C18-B
+Removed Pin From Net: NetName=D_n Pin=C19-B
+Removed Pin From Net: NetName=D_p Pin=R25-A
+Removed Pin From Net: NetName=D_n Pin=R26-A
+Removed Pin From Net: NetName=NetR25_B Pin=U5-11
+Removed Pin From Net: NetName=NetR26_B Pin=U5-12
+Removed Pin From Net: NetName=NetU1_37 Pin=U5-av
+Change Component Footprint: Designator=R25 Old Footprint=Resistor bridge New Footprint=Resistor 0603
+Change Component Footprint: Designator=R26 Old Footprint=Resistor bridge New Footprint=Resistor 0603
+Added Component: Designator=SW9(JS202011SCQN)
+Add component (AddParameter): Name = "Manufacturer"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "JS202011SCQN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "401-2002-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=D_n Pin=C18-B
+Added Pin To Net: NetName=D_p Pin=C19-B
+Added Pin To Net: NetName=D_n Pin=R25-A
+Added Pin To Net: NetName=D_p Pin=R26-A
+Added Pin To Net: NetName=NetR25_B Pin=SW9-2
+Added Pin To Net: NetName=NetR26_B Pin=SW9-5
+Add Pin To Net: Unknown Pin: Pin U5-4
+Added Pin To Net: NetName=NetSW9_1 Pin=SW9-1
+Added Pin To Net: NetName=NetSW9_1 Pin=U5-12
+Added Net: Name=NetSW9_1
+Added Pin To Net: NetName=NetSW9_3 Pin=SW9-3
+Added Pin To Net: NetName=NetSW9_3 Pin=U1-13
+Added Net: Name=NetSW9_3
+Added Pin To Net: NetName=NetSW9_4 Pin=SW9-4
+Added Pin To Net: NetName=NetSW9_4 Pin=U5-11
+Added Net: Name=NetSW9_4
+Added Pin To Net: NetName=NetSW9_6 Pin=SW9-6
+Added Pin To Net: NetName=NetSW9_6 Pin=U1-14
+Added Net: Name=NetSW9_6
+Added Member To Class: ClassName=Peripherals Member=Component DS1 FT231XS-R
+Added Member To Class: ClassName=COM Member=Component SW9 JS202011SCQN

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=NetR25_B Pin=R25-C
+Removed Pin From Net: NetName=NetR25_B Pin=R25-D
+Removed Pin From Net: NetName=NetR26_B Pin=R26-C
+Removed Pin From Net: NetName=NetR26_B Pin=R26-D
+Change Component Footprint: Designator=R25 Old Footprint= New Footprint=Resistor bridge
+Change Component Footprint: Designator=R26 Old Footprint= New Footprint=Resistor bridge
+Added Pin To Net: NetName=NetR25_C Pin=R25-C
+Added Pin To Net: NetName=NetR26_C Pin=R26-C

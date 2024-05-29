@@ -1,0 +1,14 @@
+Removed Member From Class: ClassName=Designator Member=C1
+Removed Member From Class: ClassName=Designator Member=C16
+Removed Member From Class: ClassName=Designator Member=C17
+Removed Member From Class: ClassName=Designator Member=R2
+Removed Member From Class: ClassName=Designator Member=R3
+Change Class Name : Old Net Name=Designator New Net Name=Peripherals
+Added Class: Name=COM
+Added Class: Name=MCU
+Added Class: Name=Power
+Added Member To Class: ClassName=Peripherals Member=Component C11 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C12 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C13 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component R21 0 O
+Added Member To Class: ClassName=Peripherals Member=Component R23 0 O

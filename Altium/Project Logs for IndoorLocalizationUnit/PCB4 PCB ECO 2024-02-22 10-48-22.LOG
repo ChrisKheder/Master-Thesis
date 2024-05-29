@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VBUS Pin=R12-A
+Removed Pin From Net: NetName=VBUS Pin=R15-A
+Removed Pin From Net: NetName=VBUS Pin=R16-A
+Removed Member From Class: ClassName=Power Member=R12
+Removed Member From Class: ClassName=Power Member=R15
+Removed Member From Class: ClassName=Power Member=R16
+Added Pin To Net: NetName=VBUS Pin=U2-4
+Added Pin To Net: NetName=VBUS Pin=U2-9
+Added Pin To Net: NetName=VBUS Pin=U2-17

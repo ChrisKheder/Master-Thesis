@@ -1,0 +1,76 @@
+Removed Pin From Net: NetName=GND Pin=R14-B
+Removed Member From Class: ClassName=Peripherals Member=C1
+Removed Member From Class: ClassName=Power Member=C1
+Removed Member From Class: ClassName=MCU Member=C7
+Removed Member From Class: ClassName=Peripherals Member=C7
+Removed Member From Class: ClassName=COM Member=C10
+Removed Member From Class: ClassName=MCU Member=C10
+Removed Member From Class: ClassName=COM Member=C14
+Removed Member From Class: ClassName=MCU Member=C14
+Removed Member From Class: ClassName=Power Member=C14
+Removed Member From Class: ClassName=Power Member=C15
+Removed Member From Class: ClassName=MCU Member=C16
+Removed Member From Class: ClassName=Peripherals Member=C16
+Removed Member From Class: ClassName=Power Member=C16
+Removed Member From Class: ClassName=Peripherals Member=C17
+Removed Member From Class: ClassName=Power Member=C17
+Removed Member From Class: ClassName=Power Member=D1
+Removed Member From Class: ClassName=Power Member=D2
+Removed Member From Class: ClassName=Peripherals Member=R2
+Removed Member From Class: ClassName=Power Member=R2
+Removed Member From Class: ClassName=Peripherals Member=R3
+Removed Member From Class: ClassName=Power Member=R3
+Removed Member From Class: ClassName=MCU Member=R9
+Removed Member From Class: ClassName=Peripherals Member=R9
+Removed Member From Class: ClassName=MCU Member=R10
+Removed Member From Class: ClassName=Peripherals Member=R10
+Removed Member From Class: ClassName=MCU Member=R11
+Removed Member From Class: ClassName=Peripherals Member=R11
+Removed Member From Class: ClassName=MCU Member=R13
+Removed Member From Class: ClassName=Power Member=R20
+Removed Member From Class: ClassName=MCU Member=R22
+Removed Member From Class: ClassName=Power Member=R22
+Removed Member From Class: ClassName=Power Member=R24
+Removed Member From Class: ClassName=Power Member=U1
+Added Member To Class: ClassName=MCU Member=Component C2 0.1 µF
+Added Member To Class: ClassName=MCU Member=Component C3 1 µF
+Added Member To Class: ClassName=MCU Member=Component C4 0.1 µF
+Added Member To Class: ClassName=MCU Member=Component C5 0.1 µF
+Added Member To Class: ClassName=Power Member=Component C6 4.7 µF
+Added Member To Class: ClassName=Power Member=Component C7 10 µF
+Added Member To Class: ClassName=Power Member=Component C8 4.7 µF
+Added Member To Class: ClassName=Power Member=Component C9 4.7 µF
+Added Member To Class: ClassName=Power Member=Component C10 4.7 µF
+Added Member To Class: ClassName=Peripherals Member=Component C11 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C12 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C13 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C14 0.1 µF
+Added Member To Class: ClassName=Peripherals Member=Component C15 0.1 µF
+Added Member To Class: ClassName=COM Member=Component C16 0.1 µF
+Added Member To Class: ClassName=COM Member=Component C17 4.7 µF
+Added Member To Class: ClassName=Power Member=Component D3 Green
+Added Member To Class: ClassName=Power Member=Component D4 Blue
+Added Member To Class: ClassName=Power Member=Component D5 Red
+Added Member To Class: ClassName=MCU Member=Component R1 10kO
+Added Member To Class: ClassName=MCU Member=Component R2 0 O
+Added Member To Class: ClassName=MCU Member=Component R3 50 O
+Added Member To Class: ClassName=MCU Member=Component R4 50 O
+Added Member To Class: ClassName=MCU Member=Component R5 0 O
+Added Member To Class: ClassName=Power Member=Component R6 0.47kO
+Added Member To Class: ClassName=Power Member=Component R7 330kO
+Added Member To Class: ClassName=Power Member=Component R8 0.47kO
+Added Member To Class: ClassName=Power Member=Component R9 0.47kO
+Added Member To Class: ClassName=Power Member=Component R10 4.7kO
+Added Member To Class: ClassName=Power Member=Component R12 4.7kO
+Added Member To Class: ClassName=Power Member=Component R14 10kO
+Added Member To Class: ClassName=Power Member=Component R15 4.7kO
+Added Member To Class: ClassName=Power Member=Component R16 4.7kO
+Added Member To Class: ClassName=Power Member=Component R17 110kO
+Added Member To Class: ClassName=Power Member=Component R18 30kO
+Added Member To Class: ClassName=Power Member=Component R19 110kO
+Added Member To Class: ClassName=Peripherals Member=Component R20 0 O
+Added Member To Class: ClassName=Peripherals Member=Component R21 0 O
+Added Member To Class: ClassName=Peripherals Member=Component R22 0 O
+Added Member To Class: ClassName=Peripherals Member=Component R23 0 O
+Added Member To Class: ClassName=Peripherals Member=Component R24 0 O
+Added Member To Class: ClassName=Power Member=Component U2 MCP73871T-2CCI/ML

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=C_p Pin=R25-B
+Removed Pin From Net: NetName=C_n Pin=R26-B
+Added Pin To Net: NetName=C_n Pin=R25-B
+Added Pin To Net: NetName=C_p Pin=R26-B
+Added Pin To Net: NetName=GND Pin=SW9-B
+Add Pin To Net: Unknown Pin: Pin U5-15

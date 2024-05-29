@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetR4_B Pin=U1-18
+Added Pin To Net: NetName=+3V3 Pin=DS1-1
+Added Pin To Net: NetName=VCC Pin=U1-18
+Added Pin To Net: NetName=+3V3 Pin=U5-1
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Lime
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(153, 0, 255)
+Added Member To Class: ClassName=Power Member=Component U3 TLV75533PDBVR

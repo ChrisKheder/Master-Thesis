@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetR3_B Pin=U1-30
+Removed Pin From Net: NetName=NetR4_A Pin=U1-31
+Added Pin To Net: NetName=NetR3_B Pin=U1-24
+Added Pin To Net: NetName=NetR4_A Pin=U1-25
+Added Member To Class: ClassName=MCU Member=Component SW1 R-667843

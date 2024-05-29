@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=NetD1_A Pin=R3-A
+Removed Pin From Net: NetName=NetD2_A Pin=R4-B
+Removed Pin From Net: NetName=NetD3_B Pin=R6-A
+Removed Pin From Net: NetName=NetD4_B Pin=R8-A
+Removed Pin From Net: NetName=NetD5_B Pin=R9-A
+Removed Pin From Net: NetName=NetR6_B Pin=U2-6
+Removed Member From Class: ClassName=MCU Member=R4
+Removed Member From Class: ClassName=Power Member=R8
+Removed Member From Class: ClassName=Power Member=R9
+Change Component Comment : Designator=R6 Old Comment=0.47kO New Comment=120 O
+Change Component Comment : Designator=R3 Old Comment=50 O New Comment=120 O
+Change Component Comment : Designator=R4 Old Comment=50 O New Comment=120 O
+Change component parameters: Designator = "R3" ("R3"); Footprint = "Resistor 0603"; UniqueID = "\CZQZXGOD\VWKTUGJJ" ("\CZQZXGOD\VWKTUGJJ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT120R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT120RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "120 O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "Resistor 0603"; UniqueID = "\GRDBHWXY\ZREEIOBT" ("\GRDBHWXY\ZREEIOBT")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT120R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT120RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "120 O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "Resistor 0603"; UniqueID = "\GRDBHWXY\LVZYEQDU" ("\GRDBHWXY\LVZYEQDU")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT120R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT120RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "120 O"; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor 0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603JT430R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT430RCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "430O"; VariantName = "[No Variations]"
+Added Component: Designator=R5(Resistor 0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603JT430R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603JT430RCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "430O"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD1_A Pin=R2-B
+Added Pin To Net: NetName=NetD2_A Pin=R3-B
+Added Pin To Net: NetName=NetD3_B Pin=R4-A
+Added Pin To Net: NetName=NetD4_B Pin=R5-A
+Added Pin To Net: NetName=NetD5_B Pin=R6-A
+Added Pin To Net: NetName=NetR6_B Pin=U2-8
+Added Pin To Net: NetName=NetR2_A Pin=R2-A
+Added Pin To Net: NetName=NetR2_A Pin=U1-24
+Added Net: Name=NetR2_A
+Added Pin To Net: NetName=NetR3_A Pin=R3-A
+Added Pin To Net: NetName=NetR3_A Pin=U1-25
+Added Net: Name=NetR3_A
+Added Pin To Net: NetName=NetR4_B Pin=R4-B
+Added Pin To Net: NetName=NetR4_B Pin=U2-6
+Added Net: Name=NetR4_B
+Added Pin To Net: NetName=NetR5_B Pin=R5-B
+Added Pin To Net: NetName=NetR5_B Pin=U2-7
+Added Net: Name=NetR5_B
+Added Member To Class: ClassName=MCU Member=Component R2 430O
+Added Member To Class: ClassName=Power Member=Component R4 120 O
+Added Member To Class: ClassName=Power Member=Component R5 430O

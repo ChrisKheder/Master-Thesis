@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=NetC9_B Pin=C10-B
+Removed Pin From Net: NetName=NetC9_B Pin=J1-A6
+Removed Pin From Net: NetName=NetC9_B Pin=J1-B6
+Removed Pin From Net: NetName=NetC9_B Pin=R16-A
+Change Component Comment : Designator=J1 Old Comment=USB4125-GF-A New Comment=USB4105-GF-A
+Change component parameters: Designator = "J1" ("J1"); Footprint = "USB4105-GF-A"; UniqueID = "\SGOJDPIU" ("\SGOJDPIU")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "GCT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "USB4105-GF-A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2073-USB4105-GF-ACT-ND"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin J1-A1
+Add Pin To Net: Unknown Pin: Pin J1-A4
+Add Pin To Net: Unknown Pin: Pin J1-A9
+Add Pin To Net: Unknown Pin: Pin J1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B1
+Add Pin To Net: Unknown Pin: Pin J1-B4
+Add Pin To Net: Unknown Pin: Pin J1-B9
+Add Pin To Net: Unknown Pin: Pin J1-B12
+Add Pin To Net: Unknown Pin: Pin U1-18
+Added Pin To Net: NetName=NetC10_B Pin=C10-B
+Added Pin To Net: NetName=NetC10_B Pin=J1-A6
+Added Pin To Net: NetName=NetC10_B Pin=J1-B6
+Added Pin To Net: NetName=NetC10_B Pin=R16-A
+Added Net: Name=NetC10_B

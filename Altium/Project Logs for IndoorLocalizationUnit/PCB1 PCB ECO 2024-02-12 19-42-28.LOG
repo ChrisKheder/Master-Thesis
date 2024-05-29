@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=V_USB Pin=FB1-B
+Removed Member From Class: ClassName=Power Member=FB1
+Added Pin To Net: NetName=V_USB Pin=C6-B
+Added Pin To Net: NetName=V_USB Pin=C7-B
+Added Pin To Net: NetName=V_USB Pin=FB2-B
+Add Pin To Net: Unknown Pin: Pin J1-A1
+Add Pin To Net: Unknown Pin: Pin J1-A4
+Add Pin To Net: Unknown Pin: Pin J1-A9
+Add Pin To Net: Unknown Pin: Pin J1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B1
+Add Pin To Net: Unknown Pin: Pin J1-B4
+Add Pin To Net: Unknown Pin: Pin J1-B9
+Add Pin To Net: Unknown Pin: Pin J1-B12
+Add Pin To Net: Unknown Pin: Pin U1-18
+Added Pin To Net: NetName=V_USB Pin=U2-15
+Change Net Name : Old Net Name=V_USB New Net Name=VCC

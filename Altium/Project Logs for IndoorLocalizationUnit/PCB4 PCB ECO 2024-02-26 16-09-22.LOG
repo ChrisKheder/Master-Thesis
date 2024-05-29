@@ -1,0 +1,58 @@
+Change Component Comment : Designator=R3 Old Comment=120 O New Comment=0.47kO
+Change Component Comment : Designator=R4 Old Comment=120 O New Comment=0.47kO
+Change Component Comment : Designator=R6 Old Comment=120 O New Comment=0.47kO
+Change component parameters: Designator = "R3" ("R3"); Footprint = "Resistor 0603"; UniqueID = "\CZQZXGOD\KISJDSJX" ("\CZQZXGOD\KISJDSJX")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT470R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT470RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.47kO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "Resistor 0603"; UniqueID = "\GRDBHWXY\IQEZBJRN" ("\GRDBHWXY\IQEZBJRN")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT470R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT470RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.47kO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "Resistor 0603"; UniqueID = "\GRDBHWXY\LZLHPOEK" ("\GRDBHWXY\LZLHPOEK")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT470R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT470RCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.47kO"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(2NPN transistor)
+Add component (AddParameter): Name = "Manufacturer"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MBT3904DW1T1G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "MBT3904DW1T1GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R8(Resistor 0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10kO"; VariantName = "[No Variations]"
+Added Component: Designator=R9(Resistor 0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10kO"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC3_B Pin=Q2-3
+Added Pin To Net: NetName=NetC5_A Pin=Q2-6
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R9-A
+Added Pin To Net: NetName=NetQ2_1 Pin=U5-1
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=NetQ2_2 Pin=R8-B
+Added Net: Name=NetQ2_2
+Added Pin To Net: NetName=NetQ2_4 Pin=Q2-4
+Added Pin To Net: NetName=NetQ2_4 Pin=R8-A
+Added Pin To Net: NetName=NetQ2_4 Pin=U5-2
+Added Net: Name=NetQ2_4
+Added Pin To Net: NetName=NetQ2_5 Pin=Q2-5
+Added Pin To Net: NetName=NetQ2_5 Pin=R9-B
+Added Net: Name=NetQ2_5
+Added Member To Class: ClassName=MCU Member=Component D1 Blue
+Added Member To Class: ClassName=COM Member=Component Q2 MBT3904DW1T1G
+Added Member To Class: ClassName=COM Member=Component R8 10kO
+Added Member To Class: ClassName=COM Member=Component R9 10kO

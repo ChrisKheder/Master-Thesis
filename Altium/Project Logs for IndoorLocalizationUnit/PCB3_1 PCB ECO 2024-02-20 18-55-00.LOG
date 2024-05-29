@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=C_n Pin=R25-B
+Removed Pin From Net: NetName=C_p Pin=R26-B
+Removed Pin From Net: NetName=A_p Pin=SW9-1
+Removed Pin From Net: NetName=C_p Pin=SW9-2
+Removed Pin From Net: NetName=B_p Pin=SW9-3
+Removed Pin From Net: NetName=A_n Pin=SW9-4
+Removed Pin From Net: NetName=C_n Pin=SW9-5
+Removed Pin From Net: NetName=B_n Pin=SW9-6
+Removed Pin From Net: NetName=B_n Pin=U1-13
+Removed Pin From Net: NetName=B_p Pin=U1-14
+Removed Pin From Net: NetName=VBUS Pin=U5-acaca
+Change Component Footprint: Designator=SW9 Old Footprint=JS202011SCQN New Footprint=Jumper
+Change Component Comment : Designator=SW9 Old Comment=JS202011SCQN New Comment=JUMPER
+Change component parameters: Designator = "SW9" ("SW9"); Footprint = "JS202011SCQN"; UniqueID = "\HWUVBQBA\YXRFWIQQ" ("\HWUVBQBA\YXRFWIQQ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R30(Resistor 0603)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Stackpole Electronics Inc"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RMCF0603FT10K0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RMCF0603FT10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10kO"; VariantName = "[No Variations]"
+Added Component: Designator=U6(FSUSB42MUX)
+Add component (AddParameter): Name = "Manufacturer"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "FSUSB42MUX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "FSUSB42MUXCT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=C_p Pin=R25-B
+Added Pin To Net: NetName=C_n Pin=R26-B
+Added Pin To Net: NetName=GND Pin=R30-A
+Added Pin To Net: NetName=GND Pin=SW9-B
+Added Pin To Net: NetName=B_p Pin=U1-13
+Added Pin To Net: NetName=B_n Pin=U1-14
+Add Pin To Net: Unknown Pin: Pin U5-15
+Added Pin To Net: NetName=VBUS Pin=U6-1
+Added Pin To Net: NetName=C_p Pin=U6-3
+Added Pin To Net: NetName=C_n Pin=U6-4
+Added Pin To Net: NetName=GND Pin=U6-5
+Added Pin To Net: NetName=A_n Pin=U6-6
+Added Pin To Net: NetName=A_p Pin=U6-7
+Added Pin To Net: NetName=B_n Pin=U6-8
+Added Pin To Net: NetName=B_p Pin=U6-9
+Added Pin To Net: NetName=GND Pin=U6-10
+Added Pin To Net: NetName=NetR30_B Pin=R30-B
+Added Pin To Net: NetName=NetR30_B Pin=SW9-A
+Added Net: Name=NetR30_B
+Added Pin To Net: NetName=NetSW9_B Pin=SW9-B
+Added Pin To Net: NetName=NetSW9_B Pin=U6-2
+Added Net: Name=NetSW9_B
+Added Member To Class: ClassName=COM Member=Component R30 10kO
+Added Member To Class: ClassName=COM Member=Component U6 FSUSB42MUX

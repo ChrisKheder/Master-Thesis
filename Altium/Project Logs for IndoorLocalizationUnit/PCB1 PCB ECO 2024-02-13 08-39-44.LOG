@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=J1-A1
+Added Pin To Net: NetName=V_Bus Pin=J1-A4
+Added Pin To Net: NetName=GND Pin=J1-B1
+Added Pin To Net: NetName=V_Bus Pin=J1-B4
+Add Pin To Net: Unknown Pin: Pin U1-18

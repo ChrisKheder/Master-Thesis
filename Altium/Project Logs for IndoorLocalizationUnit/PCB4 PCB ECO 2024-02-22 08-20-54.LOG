@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VBUS Pin=R30-A
+Removed Pin From Net: NetName=GND Pin=SW9-B
+Removed Pin From Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=GND Pin=R30-B
+Added Pin To Net: NetName=VBUS Pin=SW9-A
+Added Pin To Net: NetName=NetR30_A Pin=R30-A
+Added Pin To Net: NetName=NetR30_A Pin=SW9-B
+Added Pin To Net: NetName=NetR30_A Pin=U6-2
+Added Net: Name=NetR30_A

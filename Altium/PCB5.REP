@@ -1,0 +1,373 @@
+*************************************************************
+FileName = PCB5.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Solder
+      File : PCB5.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : L4
+      File : PCB5.GBL
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D54
+    D56
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : L3 (PWR)
+      File : PCB5.G2
+
+    Adding Layer      : L3 (PWR)
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D56
+    D60
+    D64
+*************************************************************
+
+*************************************************************
+Generating : L1
+      File : PCB5.GTL
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+*************************************************************
+
+*************************************************************
+Generating : L2 (GND)
+      File : PCB5.G1
+
+    Adding Layer      : L2 (GND)
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D60
+    D64
+    D65
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : PCB5.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : PCB5.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : PCB5.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : PCB5.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : PCB5.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : PCB5.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : PCB5.GM2
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 5
+      File : PCB5.5
+
+    Adding Layer      : Dielectric 5
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : PCB5.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom 3D Body
+      File : PCB5.GM3
+
+    Adding Layer      : Bottom 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 3
+      File : PCB5.3
+
+    Adding Layer      : Dielectric 3
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : SilkPrints
+      File : PCB5.GM420
+
+    Adding Layer      : SilkPrints
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : PCB5.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : PCB5.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : PCB5.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D59
+    D60
+    D61
+    D62
+    D63
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : PCB5.1
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : PCB5.GD1
+
+    Adding Drill Pair : L1-L4
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : PCB5.GG1
+
+    Adding Drill Pair : L1-L4
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D68
+*************************************************************
+

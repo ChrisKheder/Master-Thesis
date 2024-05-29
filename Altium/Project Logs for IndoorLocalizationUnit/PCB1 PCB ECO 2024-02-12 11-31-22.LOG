@@ -1,0 +1,63 @@
+Removed Pin From Net: NetName=NetC16_B Pin=SW1-A
+Removed Pin From Net: NetName=NetC16_B Pin=SW1-A
+Removed Pin From Net: NetName=NetC18_B Pin=SW3-A
+Removed Pin From Net: NetName=NetC18_B Pin=SW3-A
+Removed Pin From Net: NetName=NetC19_B Pin=SW4-A
+Removed Pin From Net: NetName=NetC19_B Pin=SW4-A
+Removed Pin From Net: NetName=NetC20_B Pin=SW5-A
+Removed Pin From Net: NetName=NetC20_B Pin=SW5-A
+Removed Pin From Net: NetName=NetC21_B Pin=SW6-A
+Removed Pin From Net: NetName=NetC21_B Pin=SW6-A
+Removed Pin From Net: NetName=NetC22_B Pin=SW7-A
+Removed Pin From Net: NetName=NetC22_B Pin=SW7-A
+Added Component: Designator=B1(battery)
+Add component (AddParameter): Name = "Manufacturer"; Value = "batterikungen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "103040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Batterikungen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "827-016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1200mAh"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin B1-+
+Add Pin To Net: Unknown Pin: Pin B1--
+Add Pin To Net: Unknown Pin: Pin J1-A1
+Add Pin To Net: Unknown Pin: Pin J1-A4
+Add Pin To Net: Unknown Pin: Pin J1-A5
+Add Pin To Net: Unknown Pin: Pin J1-A6
+Add Pin To Net: Unknown Pin: Pin J1-A7
+Add Pin To Net: Unknown Pin: Pin J1-A9
+Add Pin To Net: Unknown Pin: Pin J1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B1
+Add Pin To Net: Unknown Pin: Pin J1-B4
+Add Pin To Net: Unknown Pin: Pin J1-B5
+Add Pin To Net: Unknown Pin: Pin J1-B6
+Add Pin To Net: Unknown Pin: Pin J1-B7
+Add Pin To Net: Unknown Pin: Pin J1-B9
+Add Pin To Net: Unknown Pin: Pin J1-B12
+Add Pin To Net: Unknown Pin: Pin J1-SHELL
+Added Pin To Net: NetName=GND Pin=SW1-A
+Added Pin To Net: NetName=GND Pin=SW1-A
+Added Pin To Net: NetName=NetC16_B Pin=SW1-B
+Added Pin To Net: NetName=NetC16_B Pin=SW1-B
+Added Pin To Net: NetName=GND Pin=SW2-B
+Added Pin To Net: NetName=GND Pin=SW2-B
+Added Pin To Net: NetName=GND Pin=SW3-A
+Added Pin To Net: NetName=GND Pin=SW3-A
+Added Pin To Net: NetName=NetC18_B Pin=SW3-B
+Added Pin To Net: NetName=NetC18_B Pin=SW3-B
+Added Pin To Net: NetName=GND Pin=SW4-A
+Added Pin To Net: NetName=GND Pin=SW4-A
+Added Pin To Net: NetName=NetC19_B Pin=SW4-B
+Added Pin To Net: NetName=NetC19_B Pin=SW4-B
+Added Pin To Net: NetName=GND Pin=SW5-A
+Added Pin To Net: NetName=GND Pin=SW5-A
+Added Pin To Net: NetName=NetC20_B Pin=SW5-B
+Added Pin To Net: NetName=NetC20_B Pin=SW5-B
+Added Pin To Net: NetName=GND Pin=SW6-A
+Added Pin To Net: NetName=GND Pin=SW6-A
+Added Pin To Net: NetName=NetC21_B Pin=SW6-B
+Added Pin To Net: NetName=NetC21_B Pin=SW6-B
+Added Pin To Net: NetName=GND Pin=SW7-A
+Added Pin To Net: NetName=GND Pin=SW7-A
+Added Pin To Net: NetName=NetC22_B Pin=SW7-B
+Added Pin To Net: NetName=NetC22_B Pin=SW7-B
+Add Pin To Net: Unknown Pin: Pin U1-18
+Added Member To Class: ClassName=Power Member=Component B1 1200mAh

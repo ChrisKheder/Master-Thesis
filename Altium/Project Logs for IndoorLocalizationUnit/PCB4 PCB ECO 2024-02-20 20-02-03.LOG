@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=R30-A
+Added Pin To Net: NetName=VBUS Pin=R30-A
+Add Pin To Net: Unknown Pin: Pin U5-15
+Change Net Name : Old Net Name=V_Bat New Net Name=VBat
+Change Net Name : Old Net Name=V_Charger New Net Name=VCharger
+Change Net Color : Old Net Color=RGB(61, 133, 198) New Net Color=Default
+Change Net Color : Old Net Color=RGB(91, 15, 0) New Net Color=Default

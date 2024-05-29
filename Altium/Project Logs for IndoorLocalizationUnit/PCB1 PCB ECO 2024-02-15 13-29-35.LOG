@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=VBUS Pin=C16-B
+Added Pin To Net: NetName=VBUS Pin=C17-B
+Added Pin To Net: NetName=VUSB Pin=C21-B
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(147, 196, 125)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(230, 145, 56)

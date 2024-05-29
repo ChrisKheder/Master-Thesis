@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VCC Pin=C16-B
+Removed Pin From Net: NetName=VCC Pin=C17-B
+Removed Pin From Net: NetName=V_Bus Pin=C21-B
+Removed Pin From Net: NetName=VCC Pin=FB1-B
+Removed Pin From Net: NetName=VCC Pin=U5-15
+Change Net Name : Old Net Name=V_Bus New Net Name=VUSB
+Change Net Color : Old Net Color=RGB(204, 0, 0) New Net Color=Default
+Added Pin To Net: NetName=V_Bus Pin=C21-B
+Added Net: Name=V_Bus
+Added Pin To Net: NetName=VBUS Pin=FB1-B
+Added Pin To Net: NetName=VBUS Pin=U5-15
+Added Net: Name=VBUS
+Add Net: Net with name "VCC" already exists

@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=V_screen Pin=DS1-1
+Removed Pin From Net: NetName=V_screen Pin=U5-1
+Add Pin To Net: Unknown Pin: Pin B1-+
+Add Pin To Net: Unknown Pin: Pin B1--
+Add Pin To Net: Unknown Pin: Pin J1-A1
+Add Pin To Net: Unknown Pin: Pin J1-A4
+Add Pin To Net: Unknown Pin: Pin J1-A5
+Add Pin To Net: Unknown Pin: Pin J1-A6
+Add Pin To Net: Unknown Pin: Pin J1-A7
+Add Pin To Net: Unknown Pin: Pin J1-A9
+Add Pin To Net: Unknown Pin: Pin J1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B1
+Add Pin To Net: Unknown Pin: Pin J1-B4
+Add Pin To Net: Unknown Pin: Pin J1-B5
+Add Pin To Net: Unknown Pin: Pin J1-B6
+Add Pin To Net: Unknown Pin: Pin J1-B7
+Add Pin To Net: Unknown Pin: Pin J1-B9
+Add Pin To Net: Unknown Pin: Pin J1-B12
+Add Pin To Net: Unknown Pin: Pin J1-SHELL
+Add Pin To Net: Unknown Pin: Pin U1-18
+Change Net Name : Old Net Name=V_screen New Net Name=+3V3
+Added Pin To Net: NetName=3V3 Pin=U5-1
+Added Net: Name=3V3
+Added Pin To Net: NetName=V_screen Pin=DS1-1
+Added Net: Name=V_screen
+Added Member To Class: ClassName=Power Member=Component SW2 R-667843

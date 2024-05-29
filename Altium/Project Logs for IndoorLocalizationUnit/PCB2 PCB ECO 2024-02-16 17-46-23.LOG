@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=DS1-X
+Removed Pin From Net: NetName=GND Pin=DS1-X
+Removed Pin From Net: NetName=GND Pin=DS1-X
+Removed Pin From Net: NetName=GND Pin=DS1-X
+Change Component Footprint: Designator=DS1 Old Footprint= New Footprint=Screen

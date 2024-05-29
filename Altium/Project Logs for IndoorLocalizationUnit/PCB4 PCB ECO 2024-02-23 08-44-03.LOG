@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=GND Pin=C7-av
+Removed Pin From Net: NetName=NetC3_B Pin=R2-B
+Removed Pin From Net: NetName=NetC5_A Pin=R5-B
+Removed Pin From Net: NetName=NetC11_B Pin=R20-A
+Removed Pin From Net: NetName=NetC12_B Pin=R21-A
+Removed Pin From Net: NetName=NetC13_B Pin=R22-A
+Removed Pin From Net: NetName=NetC14_B Pin=R23-A
+Removed Pin From Net: NetName=NetC15_B Pin=R24-A
+Removed Member From Class: ClassName=MCU Member=R2
+Removed Member From Class: ClassName=MCU Member=R5
+Removed Member From Class: ClassName=Peripherals Member=R20
+Removed Member From Class: ClassName=Peripherals Member=R21
+Removed Member From Class: ClassName=Peripherals Member=R22
+Removed Member From Class: ClassName=Peripherals Member=R23
+Removed Member From Class: ClassName=Peripherals Member=R24
+Added Pin To Net: NetName=NetC3_B Pin=C4-B
+Add Pin To Net: Unknown Pin: Pin C7-A
+Added Pin To Net: NetName=NetC3_B Pin=SW1-B
+Added Pin To Net: NetName=NetC3_B Pin=SW1-B
+Added Pin To Net: NetName=NetC14_B Pin=U1-5
+Added Pin To Net: NetName=NetC11_B Pin=U1-6
+Added Pin To Net: NetName=NetC13_B Pin=U1-7
+Added Pin To Net: NetName=NetC15_B Pin=U1-8
+Added Pin To Net: NetName=NetC12_B Pin=U1-9
+Added Pin To Net: NetName=NetC5_A Pin=U1-27

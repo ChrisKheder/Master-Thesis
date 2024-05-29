@@ -1,0 +1,449 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2024-02-27</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">18:26:35</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc">C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">28</td></tr>
+</table>
+</td>
+</table><a name="IDAKJELHNZTI50PRFBMBBQ3AFRONRCTSFAVJ5I5QFP2NRDW5MJ5QAB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPOIIK5QBDVDPHTCESNG35ZQWOBZJGRGSF5DF5PPB0U1XCBPEJFL">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGRUQC5KN4TESGK45MLHVCO5O4NGOZVDRKEH1XSPR4L2IYOQBNBQC">Clearance Constraint (Gap=0.2mm) ((InNet('A_p') OR InNet('A_n') OR IsFill)),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMSDQ12CDVEIVKUK5QU24XXDGKHBNQ15UJSF5OSO0JMUUZJIBSIZL">Clearance Constraint (Gap=0.2mm) (InNet('VBUS')),((OnLayer('L1') AND (InNet('VBat') OR InNet('VCharger'))))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQUQ5QR5VSNB4KGMXLISBBSF5VOUTJ2LPJT5PSUMDMF2534HR0XFF">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAIXIEK43VMLVI5QAWLQFQUHXSC501CFTF5AJYLOLC1XAM2FOCATF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIEDQC1ZETBS0KQEKFNUTRVJXWNK43NDTTRNCLONB4SKA0DKRHWFK">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJOQSRNZD2RPWGXHZSREFHSP2EIVV2VYAAG0BUVEVUN5UX5NPURYH">Width Constraint (Min=0.25mm) (Max=1mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDT3OUPGD3EQG4PWARGBFERO5QZN45TYBGAGQ1CSNRPL3QMCXONS3M">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCOIH53MFK1TPDMAQY4H2F0KLTM1OEWIGDVYEGGCFIFYUSPGDCSI">Hole Size Constraint (Min=0.15mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDND2O0LLHYNMEC140ADVA2ZBDQKENZVTXLL1TWGGUN0EMTVNP4UHE">Hole To Hole Clearance (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPZLLP5ZNMCDPMMMQWTBWASFBIJAVZMJNXASZVCDO5JA0FMHT1OYJ">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAPNL1V1OPGCFJFHIVJLKUCRFYGSUORTDNFWXT1K0EGGEYKZRJW1P">Minimum Solder Mask Sliver (Gap=0mm) (HasFootprint('USB4105-GF-A')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWJENWUH5IAQHOEX4HCHLU1AJ4D4YQDLLTLOPFWMVZ2KHGJ5UCRCB">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0YTB5CYUSM4BGQGOK5FCYVCFDKUCIKM2DRBSZ0JC4H2YPJCUVDKO">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAAM2SDL1PZDJGQO2FHHYZRLESJAMGX4ITBMGP3MMGQYMHE0JTZ4H">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0LZI3ZGS1521P4MUUSQZ1HVNLGFWLBHSHEP0TDF3T3JKMREAJTI">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXUX5M5L41HGVETCM3X00VC3GBMMC3WOXKE2JHWMAM1LI2ZFK4X1M">Matched Lengths(Tolerance=3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVQC2WDDNKSW4J0YL1ZNIQM4NHN0G2C5TQQVOBCJAWCSLA253ICO">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXYYWEOOIUI2QGN3YPLZ351BTPEQIYBDC04Y4SNJ2MTO111JH42BL">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">28</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">28</td>
+</tr>
+</table><br><a name="IDUVTEKDDO2YKOJYVWWTRHS4SY4IRD5XVTW2DWT2GUCEE4C0WWQNHC"><h2>Rule Violations</h2></a><a name="IDJIKT3JPENASBHL4IEJOA31QKNHSIEJZTLZE25CCG2Q0JNWEBZK3"><h2>Waived Violations</h2></a><a name="IDXYYWEOOIUI2QGN3YPLZ351BTPEQIYBDC04Y4SNJ2MTO111JH42BL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.667mil|Location2.X=2452.136mil|Location1.Y=4350.702mil|Location2.Y=4390.463mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.667mil|Location2.X=2452.136mil|Location1.Y=4350.702mil|Location2.Y=4390.463mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.695mil|Location2.X=2451.245mil|Location1.Y=4449.863mil|Location2.Y=4460.118mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.695mil|Location2.X=2451.245mil|Location1.Y=4449.863mil|Location2.Y=4460.118mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.665mil|Location2.X=2472.547mil|Location1.Y=4219.615mil|Location2.Y=4259.182mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.665mil|Location2.X=2472.547mil|Location1.Y=4219.615mil|Location2.Y=4259.182mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.664mil|Location2.X=2468.869mil|Location1.Y=4265.858mil|Location2.Y=4312.585mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.664mil|Location2.X=2468.869mil|Location1.Y=4265.858mil|Location2.Y=4312.585mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.697mil|Location2.X=2472.579mil|Location1.Y=4599.428mil|Location2.Y=4638.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.697mil|Location2.X=2472.579mil|Location1.Y=4599.428mil|Location2.Y=4638.996mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.562mil|Location2.X=2471.784mil|Location1.Y=4448.992mil|Location2.Y=4460.989mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.562mil|Location2.X=2471.784mil|Location1.Y=4448.992mil|Location2.Y=4460.989mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.792mil|Location2.X=2452.132mil|Location1.Y=3994.88mil|Location2.Y=4029.418mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.792mil|Location2.X=2452.132mil|Location1.Y=3994.88mil|Location2.Y=4029.418mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.665mil|Location2.X=2452.134mil|Location1.Y=4032.9mil|Location2.Y=4058.828mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.665mil|Location2.X=2452.134mil|Location1.Y=4032.9mil|Location2.Y=4058.828mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.691mil|Location2.X=2472.573mil|Location1.Y=3945.009mil|Location2.Y=3984.722mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.691mil|Location2.X=2472.573mil|Location1.Y=3945.009mil|Location2.Y=3984.722mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.826mil|Location2.X=2469.773mil|Location1.Y=4649.589mil|Location2.Y=4697.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.826mil|Location2.X=2469.773mil|Location1.Y=4649.589mil|Location2.Y=4697.042mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.673mil|Location2.X=2472.555mil|Location1.Y=3846.622mil|Location2.Y=3886.335mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.673mil|Location2.X=2472.555mil|Location1.Y=3846.622mil|Location2.Y=3886.335mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.809mil|Location2.X=2452.149mil|Location1.Y=4501.911mil|Location2.Y=4533.643mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.809mil|Location2.X=2452.149mil|Location1.Y=4501.911mil|Location2.Y=4533.643mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4519.808mil|Location2.X=4620.323mil|Location1.Y=2305.088mil|Location2.Y=2480.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4519.808mil|Location2.X=4620.323mil|Location1.Y=2305.088mil|Location2.Y=2480.244mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.456mil|Location2.X=4586.452mil|Location1.Y=1544.251mil|Location2.Y=1646.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.456mil|Location2.X=4586.452mil|Location1.Y=1544.251mil|Location2.Y=1646.02mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.609mil|Location1.Y=1682.086mil|Location2.Y=1762.529mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.609mil|Location1.Y=1682.086mil|Location2.Y=1762.529mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4483.742mil|Location2.X=4583.943mil|Location1.Y=2304.461mil|Location2.Y=2479.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4483.742mil|Location2.X=4583.943mil|Location1.Y=2304.461mil|Location2.Y=2479.93mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.452mil|Location1.Y=1654.645mil|Location2.Y=1673.305mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.452mil|Location1.Y=1654.645mil|Location2.Y=1673.305mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.677mil|Location2.X=2451.275mil|Location1.Y=4543.801mil|Location2.Y=4554.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.677mil|Location2.X=2451.275mil|Location1.Y=4543.801mil|Location2.Y=4554.055mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.678mil|Location2.X=2452.148mil|Location1.Y=4561.118mil|Location2.Y=4586.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2406.678mil|Location2.X=2452.148mil|Location1.Y=4561.118mil|Location2.Y=4586.948mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.808mil|Location2.X=2464.048mil|Location1.Y=4468.631mil|Location2.Y=4496.88mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.808mil|Location2.X=2464.048mil|Location1.Y=4468.631mil|Location2.Y=4496.88mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.564mil|Location2.X=2471.786mil|Location1.Y=4542.93mil|Location2.Y=4554.926mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2460.564mil|Location2.X=2471.786mil|Location1.Y=4542.93mil|Location2.Y=4554.926mil|Absolute=True">Un-Routed Net Constraint: Region (0 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.824mil|Location2.X=2472.577mil|Location1.Y=4119.389mil|Location2.Y=4162.826mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.824mil|Location2.X=2472.577mil|Location1.Y=4119.389mil|Location2.Y=4162.826mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=3898.573mil|Location2.Y=3936.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=3898.573mil|Location2.Y=3936.254mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4169.598mil|Location2.Y=4210.23mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4169.598mil|Location2.Y=4210.23mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.769mil|Location2.X=4586.452mil|Location1.Y=1770.683mil|Location2.Y=1866.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.769mil|Location2.X=4586.452mil|Location1.Y=1770.683mil|Location2.Y=1866.337mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4402.556mil|Location2.Y=4439.899mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4402.556mil|Location2.Y=4439.899mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4068.405mil|Location2.Y=4108.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2405.804mil|Location2.X=2452.144mil|Location1.Y=4068.405mil|Location2.Y=4108.94mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.609mil|Location1.Y=1873.393mil|Location2.Y=2295.68mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\IndoorLocalizationUnit\PCB5.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.613mil|Location2.X=4586.609mil|Location1.Y=1873.393mil|Location2.Y=2295.68mil|Absolute=True">Un-Routed Net Constraint: Region (1 hole(s)) L1 Dead Copper - Net Not Assigned.</acronym></a><br>Waived by Altium Student at 2024-02-27 18:26:24<br>Test</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

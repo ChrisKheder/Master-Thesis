@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetDS1_5 Pin=U1-18
+Removed Pin From Net: NetName=NetDS1_3 Pin=U1-19
+Removed Pin From Net: NetName=NetDS1_4 Pin=U1-20
+Removed Pin From Net: NetName=NetDS1_8 Pin=U1-23
+Removed Pin From Net: NetName=NetDS1_6 Pin=U1-24
+Removed Pin From Net: NetName=NetDS1_7 Pin=U1-25
+Added Pin To Net: NetName=NetDS1_3 Pin=U1-17
+Added Pin To Net: NetName=NetDS1_4 Pin=U1-18
+Added Pin To Net: NetName=NetDS1_5 Pin=U1-19
+Added Pin To Net: NetName=NetDS1_6 Pin=U1-20
+Added Pin To Net: NetName=NetDS1_7 Pin=U1-23
+Added Pin To Net: NetName=NetDS1_8 Pin=U1-24
+Added Member To Class: ClassName=COM Member=Component J1 USB4105-GF-A

@@ -1,0 +1,21 @@
+Added Pin To Net: NetName=V_Bat Pin=B1-+
+Added Pin To Net: NetName=GND Pin=B1--
+Add Pin To Net: Unknown Pin: Pin J1-A1
+Add Pin To Net: Unknown Pin: Pin J1-A4
+Added Pin To Net: NetName=NetJ1_A5 Pin=J1-A5
+Added Pin To Net: NetName=NetC9_B Pin=J1-A6
+Added Pin To Net: NetName=NetC9_B Pin=J1-A7
+Add Pin To Net: Unknown Pin: Pin J1-A9
+Add Pin To Net: Unknown Pin: Pin J1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B1
+Add Pin To Net: Unknown Pin: Pin J1-B4
+Added Pin To Net: NetName=NetJ1_B5 Pin=J1-B5
+Added Pin To Net: NetName=NetC9_B Pin=J1-B6
+Added Pin To Net: NetName=NetC9_B Pin=J1-B7
+Add Pin To Net: Unknown Pin: Pin J1-B9
+Add Pin To Net: Unknown Pin: Pin J1-B12
+Added Pin To Net: NetName=NetC12_B Pin=J1-SHELL
+Added Pin To Net: NetName=NetC12_B Pin=J1-SHELL
+Added Pin To Net: NetName=NetC12_B Pin=J1-SHELL
+Added Pin To Net: NetName=NetC12_B Pin=J1-SHELL
+Add Pin To Net: Unknown Pin: Pin U1-18
